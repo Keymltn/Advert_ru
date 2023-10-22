@@ -125,6 +125,10 @@ body {
   text-align: start;
 }
 
+.advert__main-top-popup-first div p {
+  font-size: 15px;
+}
+
 .advert__main-top-popup-second {
   max-width: 355px;
   max-height: 100px;
@@ -156,6 +160,10 @@ body {
   text-align: start;
 }
 
+.advert__main-top-popup-second div p {
+  font-size: 15px;
+}
+
 .advert__main-popup {
   max-width: 430px;
   height: 400px;
@@ -176,7 +184,6 @@ body {
   align-items: center;
 }
 
-.advert__br-delete2,
 .advert__br-delete3 {
   display: none;
 }
@@ -375,26 +382,15 @@ body {
   line-height: 65px;
 }
 
-/* .advert_main-btn {
-  width: 359px;
-  height: 67px;
-  border-radius: 30px;
-  background: var(--main-green);
-  color: var(--main-dark);
-  margin-left: 10px;
-  font-family: var(--main-fontf);
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  border: none;
-  box-shadow: -1px 2px 5px 5px var(--main-green);
-} */
+.advert_main-info {
+  width: 120%;
+}
 
 .advert_main-info-top-span {
   position: relative;
   padding: 7px 17px 11px 22px;
   color: var(--main-black);
+  padding: 2px 17px 11px 16px;
 }
 
 .advert_main-info-top-span::after {
@@ -425,7 +421,7 @@ body {
 }
 
 .advert__moreinfo-fist-span {
-  padding: 2px 5px;
+  padding: 1px 4px;
   color: var(--main-black);
   position: relative;
   font-family: Inter;
@@ -463,7 +459,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 2px 4px;
+  padding: 1px 4px 4px;
 }
 
 .advert__moreinfo-third-span::after {
@@ -598,13 +594,19 @@ body {
 
 /* MEDIA */
 
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 1266px) {
   .advert_main-info h1 {
     font-size: 39px;
   }
 }
 
-@media only screen and (max-width: 1028px) {
+@media only screen and (max-width: 1157px) {
+  .advert_main-info {
+    width: 140%;
+  }
+}
+
+@media only screen and (max-width: 1087px) {
   .advert_main-info h1 {
     font-size: 35px;
     line-height: 50px;
@@ -622,7 +624,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 856px) {
+@media only screen and (max-width: 911px) {
   .advert__leader-img {
     opacity: 0.8;
     position: absolute;
@@ -632,9 +634,7 @@ body {
     font-size: 27px;
     line-height: 38px;
   }
-}
 
-@media only screen and (max-width: 855px) {
   .advert__leader {
     width: 400px;
     height: 420px;
@@ -678,7 +678,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 830px) {
   .advert_main-info h1 {
     font-size: 29px;
   }
@@ -689,16 +689,12 @@ body {
   }
 
   .advert__btn-span {
-    max-width: 140px;
+    max-width: 163px;
     width: 100%;
   }
 
   .advert__place-left-p {
     font-size: 17px;
-  }
-
-  .advert_media-br {
-    display: block;
   }
 
   .advert__moreinfo {
@@ -853,6 +849,49 @@ body {
   }
 }
 
+@media only screen and (max-width: 640px) {
+  .advert_main-info-top-span {
+    padding: 4px 17px 9px 12px;
+  }
+
+  .advert__br-delete2 {
+    display: none;
+  }
+
+  .advert__btn-span {
+    padding: 3px 7px;
+  }
+
+  .advert_media-br {
+    display: block;
+  }
+
+  .advert__br-delete3 {
+    display: block;
+  }
+
+  .advert__moreinfo {
+    height: 60%;
+  }
+
+  .advert__btn img {
+    width: 16px;
+    margin-right: 6px;
+  }
+
+  .advert__btn-span {
+    max-width: 140px;
+  }
+
+  .advert__btn-location {
+    font-size: 19px;
+  }
+
+  .advert__place-left-p {
+    font-size: 15px;
+  }
+}
+
 @media only screen and (max-width: 540px) {
   .advert__main-popup {
     width: 60%;
@@ -872,20 +911,7 @@ body {
     height: 43px;
     font-size: 22px;
   }
-}
 
-@media only screen and (max-width: 460px) {
-  .advert__main-popup h2 {
-    white-space: nowrap;
-    font-size: 22px;
-  }
-  .advert__main-popup {
-    width: 60%;
-    height: 280px;
-  }
-}
-
-@media only screen and (max-width: 540px) {
   .advert__btn-location {
     font-size: 18px;
   }
@@ -894,6 +920,23 @@ body {
     width: 15px;
     margin-right: 7px;
   }
+
+  .advert__place-left-p {
+    font-size: 14px;
+  }
+
+  .advert__btn-span {
+    max-width: 130px;
+  }
+
+  .advert__btn-location {
+    font-size: 16px;
+  }
+
+  .advert__moreinfo-third-span {
+    font-size: 16px;
+    padding: 1px 3px;
+  }
 }
 
 @media only screen and (max-width: 515px) {
@@ -901,9 +944,39 @@ body {
     font-size: 24px;
   }
 
+  .advert__btn-location {
+    font-size: 14px;
+  }
+
+  .advert__place-left-p {
+    font-size: 14px;
+  }
+
   .advert__moreinfo {
     width: 100%;
   }
+
+  .advert_main-info p {
+    font-size: 14px;
+  }
+
+  .advert__place-left-p {
+    font-size: 13px;
+  }
+
+  .advert__btn-span {
+    padding: 2px 13px;
+  }
+
+  .advert__btn-span {
+    max-width: 120px;
+  }
+
+  .advert__btn img {
+    width: 13px;
+    margin-right: 5px;
+  }
+
 
   .advert__leader-registration {
     font-size: 23px;
@@ -984,9 +1057,27 @@ body {
   }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 467px) {
   .advert__place-left {
     width: 116%;
+  }
+
+  .advert__main-popup h2 {
+    white-space: nowrap;
+    font-size: 22px;
+  }
+
+  .advert__btn-location {
+    font-size: 13px;
+  }
+
+  .advert__place-left-p {
+    font-size: 13px;
+  }
+
+  .advert__main-popup {
+    width: 60%;
+    height: 280px;
   }
 
   .advert__btn img {
@@ -1041,16 +1132,36 @@ body {
   }
 
   .advert__place-left-p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .advert__btn-location {
     font-size: 16px;
   }
 
+  .advert__btn-location {
+    font-size: 14px;
+  }
+
   .advert__btn img {
     width: 14px;
     margin-right: 6px;
+  }
+
+  .advert__main-top-popup-first div p {
+    font-size: 13px;
+  }
+
+  .advert__leader-img {
+    width: 230px;
+  }
+
+  .advert__leader-img {
+    height: 70%;
+  }
+
+  .advert__leader::after {
+    width: 200%;
   }
 
   .advert__btn-span::after {
@@ -1075,9 +1186,29 @@ body {
     width: 120%;
   }
 
+  .advert__leader::after {
+    width: 300%;
+  }
+
   .advert__place-left {
     width: 120%;
     font-size: 15px;
+  }
+
+  .advert__place-left-p {
+    font-size: 11px;
+  }
+
+  .advert__leader-registration {
+    width: 130%;
+  }
+
+  .advert__btn img {
+    margin-right: 5px;
+  }
+
+  .advert__btn-span {
+    padding: 5px 7px;
   }
 
   .advert__btn-span {
@@ -1113,7 +1244,7 @@ body {
   .advert__main-popup {
     width: 65%;
   }
-} 
+}
 
 @media only screen and (max-width: 350px) {
   .advert__place-left-p {
@@ -1144,5 +1275,23 @@ body {
   .advert__moreinfo-fist-span {
     font-size: 12px;
     padding: 2px;
+  }
+
+  .advert__btn-location {
+    font-size: 12px;
+  }
+
+  .advert__leader-registration {
+    width: 120%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .advert__btn-span {
+    padding: 0px 5px;
+  }
+
+  .advert__place-left-p {
+    font-size: 9px;
   }
 }

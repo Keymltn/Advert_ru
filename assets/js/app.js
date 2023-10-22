@@ -65,7 +65,7 @@ popupFormEl.addEventListener("submit", (e) => {
 setTimeout(() => {
   if (topPopupEl1.style.top = '-25%') {
     topPopupEl1.style.top = '5%';
-    countDownEl.innerHTML = 'Joylar soni: 15 ta'
+    countDownEl.innerHTML = 'Мест осталось: 15'
   }
 }, 6000);
 
@@ -79,7 +79,7 @@ setTimeout(() => {
 setTimeout(() => {
   if (topPopupEl2.style.top = '-25%') {
     topPopupEl2.style.top = '5%';
-    countDownEl.innerHTML = 'Joylar soni: 14 ta'
+    countDownEl.innerHTML = 'Мест осталось: 14'
   }
 }, 13000);
 
